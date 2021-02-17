@@ -1,0 +1,3 @@
+# Module billingapp
+# RPC service class, partial path of RPC policy file
+com.nitya.billingapp.client.GreetingService, CB7CEAFEB41B780D1874A53CDF3E5E30.gwt.rpc

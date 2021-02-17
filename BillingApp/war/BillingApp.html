@@ -1,0 +1,142 @@
+<!doctype html>
+<!-- The DOCTYPE declaration above will set the     -->
+<!-- browser's rendering engine into                -->
+<!-- "Standards Mode". Replacing this declaration   -->
+<!-- with a "Quirks Mode" doctype is not supported. -->
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<!--                                                               -->
+<!-- Consider inlining CSS to reduce the number of requested files -->
+<!--                                                               -->
+<link type="text/css" rel="stylesheet" href="BillingApp.css">
+<!--                                           -->
+<!-- Any title is fine                         -->
+<!--                                           -->
+<title>Billing Application</title>
+<!--                                           -->
+<!-- This script loads your compiled module.   -->
+<!-- If you add any GWT meta tags, they must   -->
+<!-- be added before this line.                -->
+<!--                                           -->
+<script type="text/javascript" language="javascript"
+	src="billingapp/billingapp.nocache.js"></script>
+</head>
+<!--                                           -->
+<!-- The body can have arbitrary html, or      -->
+<!-- you can leave the body empty if you want  -->
+<!-- to create a completely dynamic UI.        -->
+<!--                                           -->
+<body>
+	<!-- RECOMMENDED if your web app will not function without JavaScript enabled -->
+	<noscript>
+		<div
+			style="width: 22em; position: absolute; left: 50%; margin-left: -11em; color: red; border: 1px solid red; padding: 4px; font-family: sans-serif">
+			Your web browser must have JavaScript enabled in order for this
+			application to display correctly.</div>
+	</noscript>
+	<h1>Billing Application</h1>
+	<div class="sub-main">
+		<div class="main">
+			<div class="invoice-card" id="invoice">
+				<div class="invoice-title">
+					<div id="main-title">
+						<h4>INVOICE</h4>
+						<span>#89 292</span>
+					</div>
+					<span id="date">17/02/2019</span>
+				</div>
+				<div class="invoice-details">
+					<table class="invoice-table">
+						<thead>
+							<tr>
+								<td>PRODUCT</td>
+								<td>UNIT</td>
+								<td>PRICE</td>
+							</tr>
+						</thead>
+						<tbody>
+							<tr class="row-data">
+								<td><p type="text" id="invoiceProd"></p></td>
+								<td id="unit"><p type="number" id="invoiceUnit"
+										maxlength="3"></p></td>
+								<td><p id="invoicePrice" maxlength="8"></p></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<table class="invoice-table">
+					<thead>
+						<tr>
+							<td>TOTAL</td>
+							<td>
+								<h2 id="invoiceTotal"></h2>
+							</td>
+						</tr>
+					</thead>
+				</table>
+				<div class="invoice-footer"></div>
+			</div>
+		</div>
+		<div class="sub-main">
+			<div class="main">
+				<div class="expense-card" id="invoice">
+					<div class="invoice-title">
+						<div id="main-title">
+							<h4>EXPENSE</h4>
+							<span>#89 292</span>
+						</div>
+						<span id="date">17/02/2019</span>
+					</div>
+					<div class="invoice-details">
+						<table class="invoice-table">
+							<thead>
+								<tr>
+									<td>PRODUCT</td>
+									<td>UNIT</td>
+									<td>PRICE</td>
+								</tr>
+							</thead>
+							<tbody>
+								<tr class="row-data">
+									<td><p type="text" id="expenseProd"></p></td>
+									<td id="unit"><p type="number" id="expenseUnit"
+											maxlength="3"></p></td>
+									<td><p id="expensePrice" maxlength="8"></p></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<table class="invoice-table">
+						<thead>
+							<tr>
+								<td>TOTAL</td>
+								<td>
+									<h2 id="expenseTotal"></h2>
+								</td>
+							</tr>
+						</thead>
+					</table>
+					<div class="invoice-footer"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<button class="button-two" id="profitButton">
+		<span>Profit / Loss</span>
+	</button>
+	<table align="center">
+
+		<tr>
+			<td id="nameFieldContainer"></td>
+
+		</tr>
+		<tr>
+			<td colspan="2" style="color: red;" id="errorLabelContainer"></td>
+		</tr>
+	</table>
+
+</body>
+
+
+</html>

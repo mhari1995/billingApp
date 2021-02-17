@@ -1,0 +1,2 @@
+serviceClass: com.nitya.billingapp.client.GreetingService
+path: CB7CEAFEB41B780D1874A53CDF3E5E30.gwt.rpc

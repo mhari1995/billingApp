@@ -1,0 +1,277 @@
+/* invoice css 
+
+/** Add css rules here for your application. */
+@import
+	url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root { -
+	-primary-color: #f5826e;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Roboto', sans-serif;
+	letter-spacing: 0.5px;
+}
+
+body {
+	background-color: var(- -primary-color);
+}
+
+.expense-card {
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	padding: 10px 2em;
+	top: 50%;
+	left: 55%;
+	transform: translate(-50%, -50%);
+	min-height: 25em;
+	width: 22em;
+	background-color: #fff;
+	border-radius: 5px;
+	box-shadow: 0px 10px 30px 5px rgba(0, 0, 0, 0.15);
+}
+
+.invoice-card {
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	padding: 10px 2em;
+	top: 50%;
+	left: 19%;
+	transform: translate(-50%, -50%);
+	min-height: 25em;
+	width: 22em;
+	background-color: #fff;
+	border-radius: 5px;
+	box-shadow: 0px 10px 30px 5px rgba(0, 0, 0, 0.15);
+}
+
+.invoice-card>div {
+	margin: 5px 0;
+}
+
+.invoice-title {
+	flex: 3;
+}
+
+.invoice-title #date {
+	display: block;
+	margin: 8px 0;
+	font-size: 12px;
+}
+
+.invoice-title #main-title {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 2em;
+}
+
+.invoice-title #main-title h4 {
+	letter-spacing: 2.5px;
+}
+
+.invoice-title span {
+	color: rgba(0, 0, 0, 0.4);
+}
+
+.invoice-details {
+	flex: 1;
+	border-top: 0.5px dashed grey;
+	border-bottom: 0.5px dashed grey;
+	display: flex;
+	align-items: center;
+}
+
+.invoice-table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+.invoice-table thead tr td {
+	font-size: 12px;
+	letter-spacing: 1px;
+	color: grey;
+	padding: 8px 0;
+}
+
+.invoice-table tbody tr td {
+	padding: 8px 0;
+	letter-spacing: 0;
+}
+
+.invoice-table .row-data #unit {
+	text-align: center;
+}
+
+.invoice-table .row-data span {
+	font-size: 13px;
+	color: rgba(0, 0, 0, 0.6);
+}
+
+.invoice-footer {
+	flex: 1;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.invoice-footer #later {
+	margin-right: 5px;
+}
+
+.btn {
+	border: none;
+	padding: 5px 0px;
+	background: none;
+	cursor: pointer;
+	letter-spacing: 1px;
+	outline: none;
+}
+
+.btn.btn-secondary {
+	color: rgba(0, 0, 0, 0.3);
+}
+
+.btn.btn-primary {
+	color: var(- -primary-color);
+}
+
+.btn#later {
+	margin-right: 2em;
+}
+
+.inputField {
+	width: 60%;
+	line-height: 29px
+}
+
+#expenseUnit, #invoiceUnit {
+	width: 50%;
+	float: left;
+	line-height: 29px;
+}
+
+#total {
+	float: right;
+}
+
+/* end of invoice css
+
+
+
+
+/** Example rules used by the template application (remove for your app) */
+h1 {
+	font-size: 2em;
+	font-weight: bold;
+	color: #777777;
+	margin: 40px 0px 70px;
+	text-align: center;
+}
+
+.sendButton {
+	display: block;
+	font-size: 16pt;
+}
+
+/** Most GWT widgets already have a style name defined */
+.gwt-DialogBox {
+	width: 400px;
+}
+
+.MarginUp {
+	margin-top: 100% !important;
+}
+
+.dialogVPanel {
+	margin: 5px;
+}
+
+.serverResponseLabelError {
+	color: red;
+}
+
+/** Set ids using widget.getElement().setId("idOfElement") */
+#closeButton {
+	margin: 15px 6px 6px;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+
+h1, button {
+	text-align: center;
+	padding: 20px;
+}
+
+p {
+	color: #fff;
+	font-size: 10px;
+}
+
+a {
+	text-decoration: none;
+	color: #fff;
+}
+
+.main {
+	width: 100%;
+}
+
+.sub-main {
+	width: 23%;
+	margin: 42px;
+	float: left;
+}
+
+/*Button Two*/
+.button-two {
+	border-radius: 4px;
+	background-color: #d35400;
+	border: none;
+	padding: 20px;
+	width: 200px;
+	transition: all 0.5s;
+}
+
+.button-two span {
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+	transition: 0.5s;
+}
+
+.button-two span:after {
+	content: ' >';
+	position: absolute;
+	opacity: 0;
+	top: 0;
+	right: -20px;
+	transition: 0.5s;
+}
+
+.button-two:hover span {
+	padding-right: 25px;
+}
+
+.button-two:hover span:after {
+	opacity: 1;
+	right: 0;
+}
+
+/* button css*/
+.button-two {
+	text-align: center;
+	cursor: pointer;
+	font-size: 22px;
+}
+
+#profitButton {
+	float: right;
+	margin-top: 5%;
+}
